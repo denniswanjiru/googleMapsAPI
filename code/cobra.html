@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="myFunction()">Say Something</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt;
+    var message = prompt("Say Something:", "");
+    if  (message.toLowerCase() == "hello") {
+        txt = "Hi There!";
+    } else if(message.toLowerCase() == "ping") {
+        txt = "Pong!";
+    } else {
+    	txt = "";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
